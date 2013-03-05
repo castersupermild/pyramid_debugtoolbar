@@ -90,7 +90,7 @@ class ExceptionDebugView(object):
         custom_predicates=(valid_host,)
         )
     def console(self):
-        static_path = self.request.static_url(STATIC_PATH)
+        static_path = self.request.static_path(STATIC_PATH)
         toolbar_root_path = self.request.route_url(ROOT_ROUTE_NAME)
         exc_history = self.exc_history
         vars = {
